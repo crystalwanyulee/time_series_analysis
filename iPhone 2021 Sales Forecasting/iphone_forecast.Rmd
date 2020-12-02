@@ -69,7 +69,7 @@ model_performances %>%
   kable(format.args = list(big.mark = ","),
         caption='<h4><center><strong>Performances of Various Models Forecasts</strong></center></h4>') %>% 
   kable_styling(full_width = T, bootstrap_options = c("striped", "hover"), ) %>%
-  row_spec(8, bold = T, color = "red")
+  row_spec(9, bold = T, color = "red")
 
 
 ```
@@ -80,7 +80,7 @@ model_performances %>%
 final_results = read.csv('final_results.csv')
 final_results[, -1] = round(final_results[, -1])
 final_results = final_results[, c(1,3,2,4)]
-colnames(final_results) = c('Quarter', 'Actual Sales 2019', 'Sales Forecast 2021', 'Forecast SD') 
+colnames(final_results) = c('Quarter', '2019 Actual Sales', '2021 Sales Forecast', '2021 Forecast SD') 
 final_results['Quarter'] = c('Q1', 'Q2', 'Q3', 'Q4', 'Whole Year')
 final_results %>% 
   kable(format.args = list(big.mark = ","),
@@ -88,6 +88,7 @@ final_results %>%
   kable_styling(full_width = T) %>%
   row_spec(5, bold = T, color = "white", background = "royalblue")
 ```
+*Note: $\sigma_{2021} = \sqrt{(7,025^2+3,974^2+3,424^2+3,520^2)}=9,448$
 
 6.  Since the question required to provide a probability that 2021 sales exceeds 2019 sales, so I I utilized standard deviations to compute the z-score of 2019's sales in the distribution of 2021's forecasts and then transformed the z-score into a probability based on the normal distribution assumption of the white noises. Here is the probability.<br><br>
 
