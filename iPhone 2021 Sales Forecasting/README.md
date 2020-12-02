@@ -2,7 +2,7 @@
 
 
 
-I attended an interesting forecasting challenge in [Good Judgement Open](https://www.gjopen.com/) , which is a crowd-sourced forecasting website, where real organizations post questions that they would like answered. This challenge is to predict iPhone's sales in 2021. According to the challenge page, iPhone sales have fluctuated over the years. 5G capability and COVID-19 probably cause some impacts both on the demand on and supply of iPhones. These factors introduce uncertainty on sales forecasting. In this project, I used approximately 12 years of quarterly sales data and also consider China GDP to built ARIMAX model. Simultaneously and implemented GARCH model to estimate standard deviations of sales at different time points. Based on the model,  iPhone sales are anticipated to be **$ 125,725 billions in 2021** and there might be only **3.8%** probability that 2021's sales is able to outstrip 2019's sales.
+I attended an interesting forecasting challenge in [Good Judgement Open](https://www.gjopen.com/questions/1823-will-apple-s-iphone-net-sales-be-higher-in-fy-2021-than-fy-2019) , which is a crowd-sourced forecasting website, where real organizations post questions that they would like answered. This challenge is to predict iPhone's sales in 2021. According to the challenge page, iPhone sales have fluctuated over the years. 5G capability and COVID-19 probably cause some impacts both on the demand on and supply of iPhones. These factors introduce uncertainty on sales forecasting. In this project, I used approximately 12 years of quarterly sales data and also consider China GDP to built ARIMAX model. Simultaneously and implemented GARCH model to estimate standard deviations of sales at different time points. Based on the model,  iPhone sales are anticipated to be **$ 125,725 billions in 2021** and there might be only **3.8%** probability that 2021's sales is able to outstrip 2019's sales. 
 
 
 
@@ -20,7 +20,7 @@ Time Series Analysis, ARIMA, ARIMAX, GARCH, Dickey-Fuller test, Diebold-Mariano 
 
 ## Data
 
-1. Apple's Total Revenue (2008 Q2 ~ 2020 Q4, source: WRDS)
+1. Apple's Total Revenue (2008 Q2 ~ 2020 Q4, source: WRDS)<br>
 2. iPhone sales share of Apple's total revenue (2009 Q1 ~ 2020 Q4, source: [statista](https://www.statista.com/statistics/253649/iphone-revenue-as-share-of-apples-total-revenue/))<br>
 3. Chian GDP (1992 Q1 ~ 2020 Q3, source: [FRED](https://fred.stlouisfed.org/series/CHNGDPNQDSMEI))<br>
 4. US GDP (1947 Q1 ~ 2020 Q3, source: [FRED](https://fred.stlouisfed.org/series/GDP))<br>
