@@ -39,7 +39,7 @@ Time Series Analysis, ARIMA, ARIMAX, GARCH, Dickey-Fuller test, Diebold-Mariano 
 
 3. Before building models: I visualized iPhone sales series to inspect if there is any trend and seasonality and also plotted other exogenous variables to examine cointegration. Furthermore, I applied Dickey–Fuller test to determine if a series a stationary series and also conduct conintegration test to verify whether cointegration exists between iPhone sales and other exogenous variables or not.
 
-4. During the model-building stage, I tried to use ARIMA and ARIMAX model with different exogeneous variables and various number of lags. After several time trials, I found China GDP at lag 3 can effectively and significantly eliminate RMSE on the validation period. Here are the results of trials.<br><br>![image-20201202002516836](images/table2.png)<br><br>
+4. During the model-building stage, I tried to use ARIMA and ARIMAX model with different exogeneous variables and various number of lags. After several time trials, I found China GDP at lag 3 can effectively and significantly eliminate RMSE on the validation period. Here are the results of trials.<br><br>![image-20201202002516836](images/table3.png)<br><br>
 
 5. I used residuals from my best forecasting model to build GARCH model and predict standard deviations of 2021's sales. Below are 2021's forecasts. <br><br>![image-20201202002425331](images/forecast_plot.png)<br><br>![image-20201202002425331](images/table1.png)<br><br>
 
