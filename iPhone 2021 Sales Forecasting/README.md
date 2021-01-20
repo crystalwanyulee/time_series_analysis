@@ -41,7 +41,7 @@ Time Series Analysis, ARIMA, ARIMAX, GARCH, Dickey-Fuller test, Diebold-Mariano 
 
 4. During the model-building stage, I tried to use ARIMA and ARIMAX model with different exogeneous variables and various number of lags. After several time trials, I found China GDP at lag 3 can effectively and significantly eliminate RMSE on the validation period. Here are the results of trials.<br><br>![image-20201202002516836](images/table2.png)<br><br>
 
-5. I used residuals from my best forecasting model to build GARCH model and predict standard deviations of 2021's sales. Below are 2021's forecasts. <br><br>![image-20201202002425331](forecast_plot.png)<br><br>![image-20201202002425331](images/table1.png)<br><br>
+5. I used residuals from my best forecasting model to build GARCH model and predict standard deviations of 2021's sales. Below are 2021's forecasts. <br><br>![image-20201202002425331](images/forecast_plot.png)<br><br>![image-20201202002425331](images/table1.png)<br><br>
 
 6. Since the question required to provide a probability that 2021 sales exceeds 2019 sales, so I I utilized standard deviations to compute the z-score of 2019's sales in the distribution of 2021's forecasts and then transformed the z-score into a probability based on the normal distribution assumption of the white noises. Here is the probability.<br><br>
 
